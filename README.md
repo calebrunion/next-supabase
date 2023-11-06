@@ -51,10 +51,10 @@ If you wish to just develop locally and not deploy to Vercel, [follow the steps 
 
 1. You'll first need a Supabase project which can be made [via the Supabase dashboard](https://database.new)
 
-2. Create a Next.js app using the Supabase Starter template npx command
+2. Create a Next.js app using the Supabase Starter template bunx command
 
    ```bash
-   npx create-next-app -e with-supabase
+   bunx create-next-app -e with-supabase
    ```
 
 3. Use `cd` to change into the app's directory
