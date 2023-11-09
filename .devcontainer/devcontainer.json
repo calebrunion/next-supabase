@@ -1,0 +1,28 @@
+{
+  "name": "Bun (Ubuntu 22.04)",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "forwardPorts": [5832],
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        // cSpell:disable
+        "dbaeumer.vscode-eslint",
+        "streetsidesoftware.code-spell-checker",
+        "mhutchie.git-graph",
+        "esbenp.prettier-vscode",
+        "bradlc.vscode-tailwindcss"
+        // cSpell:enable
+      ]
+    }
+  },
+  "postCreateCommand": "bun install",
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {
+      "nodeGypDependencies": true,
+      "version": "lts",
+      "nvmVersion": "latest"
+    }
+  }
+}
